@@ -12,7 +12,7 @@ from pywaffle import Waffle
 import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.models import ColumnDataSource, Label, LabelSet
-from decimal import Decimal, ROUND_HALF_UP, ROUND_FLOOR, ROUND_CEILING
+#from decimal import Decimal, ROUND_HALF_UP, ROUND_FLOOR, ROUND_CEILING
 
 
 
