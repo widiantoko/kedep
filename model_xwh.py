@@ -99,7 +99,7 @@ with colA:
 
     st.pyplot(plt)
 
-st.divider()
+#st.divider()
 
 
 
@@ -288,8 +288,8 @@ sst=round((len(df_anyar)/cap*100),1)
 
 
 model_3d.update_layout(title=f'Visualisasi Penyimpanan Produk di Blok {pilihan}',title_font_family='Helvetica',
-                       title_xanchor='left',title_yanchor='top', title_y=0.98, title_x=0.08, title_font_size=13)
-model_3d.update_layout(autosize=False,width=650,height=450, margin=dict(t=3, l=3, b=0.1, r=0.1),)
+                       title_xanchor='left',title_yanchor='bottom', title_y=0.15, title_x=0.08, title_font_size=13)
+model_3d.update_layout(autosize=False,width=750,height=450, margin=dict(t=3, l=3, b=0.1, r=0.1),)
 model_3d.update_layout(scene = dict(xaxis = dict(title= f"Blok {pilihan}" ,
                                                 ticktext= loc_textA, tickvals= loc_valA,
                                                      showticklabels=True),
