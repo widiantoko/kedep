@@ -109,7 +109,7 @@ with colA:
 
     st.pyplot(plt)
 
-    st.divider()
+st.divider()
 
 
 
@@ -327,7 +327,7 @@ with col5:
 
 
 
-st.table(df_new)
+#st.table(df_new)
 #st.text(cap)
 #st.text(sst)
 
@@ -391,43 +391,3 @@ with col4:
 #    i += 1  # Update kondisi iterasi
 
 
-
-my_list = [1,1,2,2,2,3,3,3,3,3,4,4,4,5,5] 
-df2 = pd.Series(my_list).value_counts().to_frame('count').sort_index()
-
-df2['tally'] = df2['count'].apply(lambda x: x * '_')
-df2['join']=df2['tally'].astype(str)+df2['count'].astype(str)
-df2['join']=df2['join'].str.replace("_"," ")
-st.table(df2)
-
-
-# original string
-string = "BAS"
-
-# Right Padding of the string
-right_padding = ('{: <20}'.format(string))
-st.text(f'\"{right_padding}\"')
-
-# Left Padding of the string
-left_padding = ('{: >20}'.format(string))
-st.text(f'\"{left_padding}\"')
-
-# Center Padding of the string
-central_padding = ('{: ^20}'.format(string))
-st.text(f'\"{central_padding}\"')
-
-
-# original string
-string = ("Widiantoko")
-
-# Right Padding of the string
-right_padding = string.ljust(20)
-st.text(f'\"{right_padding}\"')
-
-# Left Padding of the string
-left_padding = string.rjust(20)
-st.text(f'\"{left_padding}\"')
-
-# Center Padding of the string
-central_padding = string.center(20)
-st.text(f'\"{central_padding}\"')
