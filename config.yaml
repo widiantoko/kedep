@@ -1,0 +1,14 @@
+cookie:
+  expiry_days: 1000
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    widiantoko:
+      email: jsmith@gmail.com
+      failed_login_attempts: 0
+      first_name: Dodi
+      last_name: Widiantoko
+      logged_in: true
+      password: $2b$12$OCe71m.zeZAieDa1vA77gui.1vwD3HFi7L9KaeCZm8FAeLAf1MeaO
+      roles: null
