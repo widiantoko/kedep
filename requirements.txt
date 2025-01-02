@@ -10,4 +10,5 @@ bokeh==2.4.3
 numpy==1.26.4
 importlib-metadata==6.8.0
 pywaffle==1.1.1
+openpyxl==3.1.2
 
