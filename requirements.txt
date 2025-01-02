@@ -11,4 +11,5 @@ bokeh==2.4.3
 numpy==1.25.2
 mxnet==1.6.0
 distutils-pytest==0.2.1
+distutils-extra-python==2.39.2
 
