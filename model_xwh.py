@@ -62,16 +62,6 @@ all_stock_2['code'] = all_stock_2['new_sum'].str.rjust(20)
 all_stock_2['len'] = all_stock_2['new_sum'].str.len()
 
 
-ab= '    a'
-c = 7
-d=ab*c
-
-st.text(d)
-
-
-
-st.table(all_stock_2)
-
 
 
 length_item = max(len(x) for x in all_stock_1['item'])
