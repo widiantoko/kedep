@@ -12,6 +12,7 @@ from pywaffle import Waffle
 import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.models import ColumnDataSource, Label, LabelSet
+from decimal import Decimal, ROUND_HALF_UP, ROUND_FLOOR, ROUND_CEILING
 
 
 
@@ -39,6 +40,10 @@ col6, col7, col8 = st.columns([3,5,7], gap="small")
 
 new_raw_data['col_pal'] = new_raw_data['item'].apply(lambda x: '#07c6a6' if x == '1500ML' else '#d73f4f' if x == '600ML' else '#175fbc')
 new_raw_data['std'] = new_raw_data['item'].apply(lambda x: 70 if x == '1500ML' else 40 if x == '600ML' else 65).astype(int)
+#new_raw_data['Marks'] = df['Marks'].round(decimals=1)
+#new_raw_data['pallet']= new_raw_data['cart']/new_raw_data['std'].round(decimals=0)
+#new_raw_data['pallet']= new_raw_data['pallet'].map(lambda x: (Decimal('0.1'), ROUND_CEILING))
+
 new_raw_data['pallet']= np.ceil(new_raw_data['cart']/new_raw_data['std'])
 new_raw_data['batch_new']=new_raw_data['batch'].astype(str)
 new_raw_data['batch_new']=new_raw_data['batch'].astype(str)
@@ -322,7 +327,7 @@ with col5:
 
 
 
-#st.text(plt_on_fl)
+st.table(df_new)
 #st.text(cap)
 #st.text(sst)
 
