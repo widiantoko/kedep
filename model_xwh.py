@@ -34,8 +34,8 @@ pilih_blok=list(new_raw_data['zona'].drop_duplicates().sort_index(ascending=True
 
 colA, colB=st.columns([7,3])
 col1, col2 = st.columns([2, 8], gap="small")
-col3, col4, col5 = st.columns([3,5,7], gap="small")
-col6, col7, col8 = st.columns([3,5,7], gap="small")
+col3, col4, col5 = st.columns([3,6,6], gap="small")
+col6, col7, col8 = st.columns([3,6,6], gap="small")
 
 
 new_raw_data['col_pal'] = new_raw_data['item'].apply(lambda x: '#07c6a6' if x == '1500ML' else '#d73f4f' if x == '600ML' else '#175fbc')
@@ -99,7 +99,7 @@ with colA:
 
     st.pyplot(plt)
 
-#st.divider()
+st.divider()
 
 
 
@@ -288,8 +288,8 @@ sst=round((len(df_anyar)/cap*100),1)
 
 
 model_3d.update_layout(title=f'Visualisasi Penyimpanan Produk di Blok {pilihan}',title_font_family='Helvetica',
-                       title_xanchor='left',title_yanchor='top', title_y=0, title_x=0.08, title_font_size=13)
-model_3d.update_layout(autosize=False,width=750,height=450, margin=dict(t=3, l=3, b=0.1, r=0.1),)
+                       title_xanchor='left',title_yanchor='top', title_y=1, title_x=0.08, title_font_size=13)
+model_3d.update_layout(autosize=False,width=500,height=450, margin=dict(t=40, l=3, b=0.1, r=0.5),)
 model_3d.update_layout(scene = dict(xaxis = dict(title= f"Blok {pilihan}" ,
                                                 ticktext= loc_textA, tickvals= loc_valA,
                                                      showticklabels=True),
@@ -350,9 +350,9 @@ pm.x_range.range_padding = 0.05
 pm.xgrid.grid_line_color = None
 pm.xaxis.major_label_orientation = 1.2
 pm.outline_line_color = None
-pm.frame_width=350
+pm.frame_width=450
 pm.plot_height=350
-pm.plot_width=350
+pm.plot_width=450
 
 with col4:
     st.bokeh_chart(pm)
