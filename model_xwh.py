@@ -99,7 +99,7 @@ with colA:
 
     st.pyplot(plt)
 
-st.divider()
+    st.divider()
 
 
 
