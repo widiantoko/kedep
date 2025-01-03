@@ -44,5 +44,13 @@ credentials:
       logged_in: true
       password: Cito_Danone
       roles: null     
+    Andi:
+      email: awh@gmail.com
+      failed_login_attempts: 0
+      first_name: Andi
+      last_name: Liani
+      logged_in: true
+      password: Cito_Danone
+      roles: null     
        
 
