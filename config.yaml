@@ -10,10 +10,10 @@ credentials:
       first_name: Dodi
       last_name: Widiantoko
       logged_in: true
-      password: $2b$12$OCe71m.zeZAieDa1vA77gui.1vwD3HFi7L9KaeCZm8FAeLAf1MeaO
+      password: Kcg_ijo2
       roles: null
     Danone:
-      email: jsmith@gmail.com
+      email: awh@gmail.com
       failed_login_attempts: 0
       first_name: Danone
       last_name: 
