@@ -12,3 +12,12 @@ credentials:
       logged_in: true
       password: $2b$12$OCe71m.zeZAieDa1vA77gui.1vwD3HFi7L9KaeCZm8FAeLAf1MeaO
       roles: null
+    Danone:
+      email: jsmith@gmail.com
+      failed_login_attempts: 0
+      first_name: Danone
+      last_name: 
+      logged_in: true
+      password: Gunung_putri
+      roles: null
+
