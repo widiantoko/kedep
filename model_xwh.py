@@ -73,7 +73,7 @@ waffle_4=dict(all_stock.values)
 waffle_5=dict(all_stock_1.values)
 
 
-
+botol='<a href="https://www.flaticon.com/free-icons/water-bottle" title="water bottle icons">Water bottle icons created by andinur - Flaticon</a>'
 
 
 #st.table(all_stock_1)
@@ -92,7 +92,7 @@ with colA:
 
   legend={'loc': 'upper left', 'bbox_to_anchor': (1.05, 1),'fontsize':10, },
   figsize=(9, 6),
-  icons= 'bottle-water' , icon_size=14, icon_legend=True,
+  icons= 'botol' , icon_size=14, icon_legend=True,
   title= {'label': 'Komposisi dan Jumlah Produk di Gudang Kedep', 'loc': 'left', 'fontsize':12, 'weight':'bold', })
 
 
