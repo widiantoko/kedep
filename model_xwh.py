@@ -92,7 +92,7 @@ with colA:
 
   legend={'loc': 'upper left', 'bbox_to_anchor': (1.05, 1),'fontsize':10, },
   figsize=(9, 6),
-  icons= 'plastic-bottle.png' , icon_size=14, icon_legend=True,
+  icons= 'plastic icons' , icon_size=14, icon_legend=True,
   title= {'label': 'Komposisi dan Jumlah Produk di Gudang Kedep', 'loc': 'left', 'fontsize':12, 'weight':'bold', })
 
 
