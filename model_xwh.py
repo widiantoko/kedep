@@ -111,7 +111,7 @@ selected2 = option_menu(None, [ "Tasks"],
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 with col1:
-    pilihan=st.selectbox(label="**Detail Produk di Blok:**",options= pilih_blok, option_menu='selected_2')
+    pilihan=st.selectbox(label="**Detail Produk di Blok:**",options= pilih_blok)
 
 
 
