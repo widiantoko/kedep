@@ -13,6 +13,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.models import ColumnDataSource, Label, LabelSet
 #from decimal import Decimal, ROUND_HALF_UP, ROUND_FLOOR, ROUND_CEILING
+from streamlit_option_menu import option_menu
 
 
 
@@ -108,10 +109,11 @@ with colA:
 
 
 with col1:
-    pilihan=st.selectbox(label="**Detail Produk di Blok:**",options= pilih_blok)
+    pilihan=st.selectbox(label="**Detail Produk di Blok:**",options= pilih_blok, option_menu=(None,["Tasks"]))
 
 
-
+# 2. horizontal menu
+#selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
 
 filter_baru=new_raw_data[new_raw_data['zona'] == pilihan]
 
