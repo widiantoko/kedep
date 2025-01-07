@@ -106,10 +106,17 @@ with colA:
 
     st.divider()
 
-
+selected2 = option_menu(None, [ "Tasks"], 
+    icons=[ "list-task"], 
+    menu_icon="cast", default_index=0, orientation="horizontal")
 
 with col1:
-    pilihan=st.selectbox(label="**Detail Produk di Blok:**",options= pilih_blok, option_menu=(None,["Tasks"]))
+    pilihan=st.selectbox(label="**Detail Produk di Blok:**",options= pilih_blok, option_menu='selected_2')
+
+
+
+
+#selected2
 
 
 # 2. horizontal menu
